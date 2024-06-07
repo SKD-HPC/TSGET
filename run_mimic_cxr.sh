@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=0 nohup python main.py \
+--image_dir data/mimic_cxr/images/ \
+--ann_path data/mimic_cxr/annotation.json \
+--dataset_name mimic_cxr \
+--max_seq_length 100 \
+--threshold 10 \
+--batch_size 16 \
+--epochs 40 \
+--save_dir   \
+--step_size 1 \
+--d_vf 512 \
+--gamma 0.8 \
+--early_stop 30 \
+--num_layers 3 \
+--beam_size 3 \
+--visual_extractor resnet101 \
+--seed 23838  

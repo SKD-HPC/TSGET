@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--image_dir data/iu_xray/images/ \
+--ann_path data/iu_xray/annotation.json \
+--dataset_name iu_xray \
+--max_seq_length 60 \
+--threshold 3 \
+--batch_size 16 \
+--epochs 100 \
+--save_dir   /public/home/huarong/yixiulong/RM/Global_Enhanced_Transformer/results \
+--d_vf 2048 \
+--step_size 50 \
+--gamma 0.1 \
+--early_stop 100 \
+--num_layers 3 \
+--beam_size 3 \
+--visual_extractor resnet101 \
+--seed 9223 
